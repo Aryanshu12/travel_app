@@ -16,7 +16,7 @@ class AppDoubleText extends StatelessWidget {
       onTap: (){
 
       },
-      child: Text(smallText,style: AppStyles.textStyle.copyWith(color: AppStyles.headlineStyle1.color)),
+      child: Text(smallText,style: AppStyles.textStyle.copyWith(color: AppStyles.primaryColor)),
      ),
      ],
      );

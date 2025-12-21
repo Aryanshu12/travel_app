@@ -1,5 +1,6 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:travel_app/screens/Home_screen.dart';
 
 class BottomNavBar extends StatefulWidget {
    BottomNavBar({super.key});
@@ -10,7 +11,7 @@ class BottomNavBar extends StatefulWidget {
 
 class _BottomNavBarState extends State<BottomNavBar> {
  final appScreen =[
-  Center(child: Text('HOME')),
+  HomeScreen(),
   Center(child: Text('SEARCH')),
   Center(child: Text('TICKET')),
   Center(child: Text('PROFILE'))
@@ -26,9 +27,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: AppBar(
-        title: Center(child: Text('Ticket APP')),
-      ),
       body: appScreen[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,

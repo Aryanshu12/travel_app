@@ -4,7 +4,7 @@ import 'package:travel_app/base/resource/style/app_styles.dart';
 class TextStyleFourth extends StatelessWidget {
   final String text;
   final TextAlign align;
-  const TextStyleFourth({super.key,required this.text, this.align = TextAlign.start});
+  const TextStyleFourth({super.key,required this.text, this.align = TextAlign.start, required TextAlign Align});
 
   @override
   Widget build(BuildContext context) {
